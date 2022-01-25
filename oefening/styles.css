@@ -1,7 +1,7 @@
 body {
     background-color: white;
 }
-hi {
+h1 {
     color:blue;
     font-family:Verdana;
     font-size: 300%;
@@ -11,5 +11,5 @@ p {
     font-family: courier;
     font-size: 160%;
     border: 2px solid black;
-    padding: 30px;
+    margin: 30px;
 }
