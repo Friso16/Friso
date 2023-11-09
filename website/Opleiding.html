@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="./Opleidingstyle.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/3d0aaf0816.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <section class="title">
+      <h1>
+        Friso Ebbers
+      </h1>
+    </section>
+  </header>
+  <section class="top-section">
+    <nav class="navbar"> 
+      <div class="buttons">
+        <a href="./index.html">
+          <h4><i class="fa-solid fa-house"></i></h4>
+        </a>
+      </div>  
+      <div class="buttons">
+        <a href="./Informatie.html">
+        <h4>Over mij</h4>
+        </a>
+      </div>  
+      <div class="buttons">
+        <a href="./Opleiding.html">
+        <h4>Opleiding</h4>
+        </a>
+      </div>  
+      <div class="buttons">
+        <a href="./Hobbys.html">
+        <h4>Hobbys</h4>
+        </a>
+      </div>  
+    </nav>
+  </section>  
+  <section class="Omiddle-home">
+    <div class="Ocontent-section">
+      <div class="Oslideshow-section">
+        <div class="Oslideshow">
+          <div class="Oslides">
+            <img src="./images/Opleiding.jpg" class="Oimages">
+          </div>
+          <div class="Oslides">
+            <img src="./images/Opleiding2.jpg" class="Oimages">
+          </div>
+          <div class="Oslides">
+            <img src="./images/Opleiding3.jpg" class="Oimages">
+          </div>
+        </div>
+        <div>
+          <button class="Obuttons" onclick="ImageSelect(1)">
+            1
+          </button> 
+          <button class="Obuttons" onclick="ImageSelect(2)">
+            2
+          </button>
+          <button class="Obuttons" onclick="ImageSelect(3)">
+            3
+          </button>
+        </div>
+      </div>
+      <div class="Oinfo-section">
+        <div class="Oinfotexts">
+          <h2>
+            Business
+          </h2>
+          <p>
+            Dit is een test-tekst
+          </p>
+        </div>
+        <div class="Oinfotexts">
+          <h2>
+            Development
+          </h2>
+          <p>
+            Dit is een test-tekst
+          </p>
+        </div>
+      </div>
+      <div class="Ofd-idd-section">
+        <div class="Ofd-idd">
+          <div class="Ofd-idd-name">
+            <div class="Ofd-idd-nametext">
+              <h2><a href="./ID-FDD.html"><u>ID-FDD</u></a></h2>
+            </div>  
+          </div>
+          <div class="Ofd-idd-text">
+            <p>
+              Dit is een test-tekst
+            </p>
+          </div>    
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>  
+    
+  </footer>
+  <script>
+    
+    let ImageCount = 1;
+    DisplayImage(ImageCount);
+    
+    function ImageSelect(n) {
+      DisplayImage(ImageCount = n);
+    }
+
+    function DisplayImage(n) {
+      let images = document.getElementsByClassName("Oslides");
+      for (i = 0; i < images.length; i++) {
+        images[i].style.display = "none";
+      }
+      images[ImageCount-1].style.display = "block";
+    }
+  </script>
+</body>
+</html>
