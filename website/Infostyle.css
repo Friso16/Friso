@@ -38,7 +38,7 @@ body {
 h2 {
   color: #333333;
   font-weight: normal;
-  font-size: 25px;
+  font-size: calc(12px + 1.5vw);
   text-align: center;
 }
 h3 {
@@ -61,7 +61,7 @@ h4:hover {
 p {
   padding: 5px;
   margin: 0px;
-  font-size: 16px;
+  font-size: calc(9.5px + 0.5vw);
   color: #333333;
 }
 header {
@@ -106,7 +106,7 @@ a {
 }
 .middle-home {
   width: 100%;
-  height: 600px;
+  height: 1000px;
   margin-bottom: 5%;
   display: flex;
   flex-direction: column;
@@ -130,12 +130,9 @@ a {
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 25%;
 }
-
 .Icontent-text-1 {
-  border: 2px;
-  border-style: solid;
   display: grid;
-  grid-template-rows: 1fr 3fr;
+  grid-template-rows: 1fr 5fr;
 }
 .Icontent-2 {
   width: 65%;
@@ -155,22 +152,26 @@ a {
   height: 80%;
   padding-left: 2%;
   padding-right: 2%;
-  border: 2px;
-  border-style: solid;
   font-size: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .Icontent-info-2 {
-  border: 2px;
-  border-style: solid;
+
 }
 footer {
   width: 100%;
   height: 150px;
-  border: 2px;
-  border-style: solid;
-  border-color: black;
+  border: 2px solid #333333;
   background-color: #C2E0FF;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.footer-sections {
+  color: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

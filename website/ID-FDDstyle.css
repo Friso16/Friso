@@ -38,7 +38,7 @@ body {
 h2 {
   color: #333333;
   font-weight: normal;
-  font-size: 25px;
+  font-size: calc(12px + 1vw);
   text-align: center;
 }
 h3 {
@@ -61,7 +61,7 @@ h4:hover {
 p {
   padding: 5px;
   margin: 0px;
-  font-size: 16px;
+  font-size: calc(9px + 0.5vw);
   color: #333333;
 }
 header {
@@ -106,7 +106,7 @@ a {
 }
 .middle-home {
   width: 100%;
-  height: 600px;
+  height: 1000px;
   margin-bottom: 5%;
   display: flex;
   flex-direction: column;
@@ -140,14 +140,13 @@ a {
 .IDcontent-text {
   width: 100%;
   height: 100%;
-  border: 2px;
-  border-style: solid;
   display: grid;
   grid-template-rows: 1fr 3fr;
 }
 .IDcontent-2 {
   width: 65%;
   height: 45%;
+  margin-top: 5%;
   display: grid;
   grid-template-rows: 1fr 3fr;
   grid-gap: 10%;
@@ -156,8 +155,6 @@ a {
 .IDcontent-2-name {
   width: 25%;
   height: 100%;
-  border: 2px;
-  border-style: solid;
 }
 .IDcontent-2-texts {
   width: 100%;
@@ -169,14 +166,19 @@ a {
 .IDcontent-2-text {
   width: 100%;
   height: 100%;
-  border: 2px;
-  border-style: solid;
 }
 footer {
   width: 100%;
   height: 150px;
-  border: 2px;
-  border-style: solid;
-  border-color: black;
+  border: 2px solid #333333;
   background-color: #C2E0FF;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.footer-sections {
+  color: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

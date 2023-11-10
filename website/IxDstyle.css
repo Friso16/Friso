@@ -1,6 +1,6 @@
 body {
   margin: 0px;
-  background-color: #E6F7FF;
+  background-color: #e2f2fa;
 }
 .top-section {
   width: 100%;
@@ -106,53 +106,71 @@ a {
 }
 .middle-home {
   width: 100%;
-  height: 800px;
+  height: 1800px;
   margin-bottom: 5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.HoContent-section {
-  width: 90%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-gap: 3%;
+.IxContent-section {
+  height: 95%;
+  width: 80%;
 }
-.HoContent {
+.IxHulp-section {
   width: 100%;
-  height: 100%;
-  margin-top: 5%;
+  height: 15%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
 }
-.HoContent-image {
-  width: 100%;
+.IxText-sections {
+  width: 50%;
   height: 100%;
 }
-.HoContent-top {
-  width: 100%;
+.IxText1-sections {
+  width: 50%;
   height: 100%;
-  display: grid;
-  grid-template-rows: 1fr 3fr;
-  grid-gap: 5%;
+  margin-right: 5%;
 }
-.HoContent-link {
+.Ix-images {
+  width: 60%;
+  max-height: 100%;
+  margin-bottom: 3%;
+  display: flex;
+  justify-content: center;
+}
+.IxBalsamiq-section {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.IxBalsamiq-image {
+  width: 33%;
+  max-height: 50%;
+  margin-left: 25%;
+  display: flex;
+  justify-content: center;
+}
+.IxIxD-section {
   width: 100%;
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.IxIxD-text {
+  width: 60%;
   height: 100%;
+  margin-bottom: 5%;
 }
-.Jiujitsu-image {
-  width: 75%;
-  height: 75%;
-}
-.HoContent-bottom {
-  width: 85%;
-  height: 85%;
-  display: grid;
-  grid-template-rows: 1fr 3fr;
+.IxIxD-image {
+  width: 90%;
+  height: 70%;
 }
 footer {  
   width: 100%;
