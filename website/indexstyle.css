@@ -182,3 +182,7 @@ footer {
   justify-content: center;
   align-items: center;
 }
+image {
+  max-height: 300px;
+  object-fit: cover;
+}
