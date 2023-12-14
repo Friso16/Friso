@@ -3,7 +3,7 @@ $(document).ready(function (e) {
     $("#myForm").submit(function (e) {
         e.preventDefault();
         $.ajax({
-            url: "<https://hooks.zapier.com/hooks/catch/17024274/3zqz58v/>",
+            url: "https://hooks.zapier.com/hooks/catch/17024274/3zqz58v/",
             type: "post",
             data: $("#myForm").serialize(),
             success: function () {

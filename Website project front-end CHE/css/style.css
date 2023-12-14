@@ -25,13 +25,54 @@ body {
   border-left: 1px;
   border-right: 1px;
   border-style: solid;
-  border-color: black;
+  border-color: #333333;
   text-decoration: none;
   color: #333333;
   text-align: center;
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.Dbutton {
+  text-decoration: none;
+  color: #333333;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.dropdown-button {
+  width: 100%;
+  color: #333333;
+  background-color: #C2E0FF;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dropdown-content {
+  width: 100%;
+  display: none;
+  position: absolute;
+  background-color: #C2E0FF;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+.dropdown-content a {
+  color: #333333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown:hover .dropdown-button {
+  background-color: #C2E0FF;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+}
+.dropdown:hover .Pdropdown-content {
+  display: block;
 }
 h2 {
   color: #333333;
@@ -95,10 +136,16 @@ img {
   max-width: 100%;
   object-fit: cover;
 }
+ul {
+  list-style-type: none;
+}
+li:before {
+  content: '➾';
+}
 .title {
   width: 100%;
   font-size: 30px;
-  background-image: url("./images/Wave.jpg"); 
+  background-image: url("../images/Wave.jpg"); 
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -348,7 +395,8 @@ img {
 .Ptext-section {
   width: 100%;
   display: grid;
-  grid-template-rows: 2fr 3fr 3fr 3fr 3fr;
+  grid-template-rows: 2fr 3fr 3fr 3fr 3fr 3fr;
+  margin: 0px 0px 5% 0px;
 }
 .Ptext-start {
   display: flex;
@@ -367,16 +415,6 @@ img {
   display: grid;
   grid-template-rows: 1fr 4fr 4fr 4fr 4fr;
 }
-.Pdropdown-button {
-  width: 100%;
-  color: #333333;
-  background-color: #C2E0FF;
-  padding: 16px;
-  font-size: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .Plegend {
   display: flex;
   justify-content: center;
@@ -386,6 +424,16 @@ img {
   width: 30%;
   position: relative;
   display: inline-block;
+}
+.Pdropdown-button {
+  width: 100%;
+  color: #333333;
+  background-color: #C2E0FF;
+  padding: 16px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .Pdropdown-content {
   width: 100%;
@@ -448,33 +496,22 @@ img {
   height: 47.5%;
 }
 .IxContent-section {
-  height: 95%;
   width: 80%;
 }
 .IxHulp-section {
   width: 100%;
-  height: 10%;
   margin-top: 2%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: row;
 }
 .IxText-sections {
   width: 50%;
-  height: 100%;
 }
-.IxText1-sections {
-  width: 50%;
-  height: 100%;
-  margin-right: 5%;
-}
-.Ix-images {
-  width: 60%;
-  max-height: 100%;
-  margin-bottom: 3%;
+.IxPaperprotimage {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
 }
 .IxBalsamiq-section {
   width: 50%;
@@ -486,33 +523,70 @@ img {
 .IxBalsamiq-image {
   width: 33%;
   max-height: 50%;
-  margin-left: 25%;
+  margin: 2%;
   display: flex;
   justify-content: center;
+}
+.IxBalsamiq-image:hover {
+  transform: scale(2); 
+}
+.IxFigmasection {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.Ixfigma {
+  width: 100%;
+  margin: 2%;
+  display: flex;
+}
+.Ixfigma-image {
+  width: 20%;
+  margin: 2%;
+  display: flex;
+  justify-content: center;
+}
+.Ixfigma-image:hover {
+  transform: scale(4); 
+}
+.IxGestaltimage {
+  width: 25%;
+  margin: 2%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .IxAi-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
 }
 .IxIxD-section {
   width: 100%;
-  height: 25%;
   margin-top: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
 }
 .IxIxD-text {
   width: 60%;
-  height: 100%;
   margin-bottom: 5%;
 }
 .IxIxD-image {
   width: 90%;
-  height: 70%;
+}
+.Ixwordlinkjes {
+  width: 100%;
+  border: 1px dashed black;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+}
+.Downloadicon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* Specifieker, dus override de font-family in body */
 main {
